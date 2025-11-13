@@ -1,0 +1,17 @@
+{
+	"name": "on_prem",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\on prem",
+			"userId": "pradeepsanagara@hotmail.com",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjM2Q3M2I2MS0zMmIyLTQ5YTMtYTI3OC03NmMzMDJmODg1NmYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "Self",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

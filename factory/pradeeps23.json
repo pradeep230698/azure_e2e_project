@@ -1,0 +1,9 @@
+{
+	"name": "pradeeps23",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3c66a329-307a-4022-a2dc-98f95d5f56a0",
+		"tenantId": "91c9a25b-5e7a-4f48-8f63-21c5d4259e7f"
+	}
+}
