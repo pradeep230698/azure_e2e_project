@@ -49,7 +49,7 @@
 						]
 					},
 					{
-						"activity": "Set variable1",
+						"activity": "cur",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -106,7 +106,7 @@
 							"container": "spotify",
 							"folder": "Bronze",
 							"file": {
-								"value": "@concat( pipeline().parameters.table, '_', activity('CDC').output.value[0].cdc, '.parquet' )",
+								"value": "@concat( pipeline().parameters.table, '_', variables('current'))",
 								"type": "Expression"
 							}
 						}
@@ -114,7 +114,7 @@
 				]
 			},
 			{
-				"name": "Set variable1",
+				"name": "cur",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -219,7 +219,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Json",
+						"referenceName": "Js1",
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "spotify",
@@ -230,7 +230,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Json",
+						"referenceName": "Js1",
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "spotify",
