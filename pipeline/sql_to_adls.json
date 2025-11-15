@@ -106,7 +106,7 @@
 							"container": "spotify",
 							"folder": "Bronze",
 							"file": {
-								"value": "@concat(\r\n    pipeline().parameters.table,\r\n    '_',\r\n    activity('CDC').output.value[0].cdc,\r\n    '.parquet'\r\n)",
+								"value": "@concat( pipeline().parameters.table, '_', activity('CDC').output.value[0].cdc, '.parquet' )",
 								"type": "Expression"
 							}
 						}
