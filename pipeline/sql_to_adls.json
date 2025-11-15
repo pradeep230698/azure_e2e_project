@@ -100,13 +100,13 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Parquet1",
+						"referenceName": "Parquet2",
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "spotify",
 							"folder": "Bronze",
 							"file": {
-								"value": "@concat(pipeline().parameters.table,'_',variables('current'))",
+								"value": "@concat(\r\n    pipeline().parameters.table,\r\n    '_',\r\n    activity('CDC').output.value[0].cdc,\r\n    '.parquet'\r\n)",
 								"type": "Expression"
 							}
 						}
